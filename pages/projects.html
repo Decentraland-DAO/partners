@@ -1,0 +1,155 @@
+---
+pagination:
+    data: projects
+    size: 1
+    alias: project
+permalink: "project/{{ project.id }}/"
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Decentraland Verified Studios</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/css/studios.css" rel="stylesheet" type="text/css">
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="dcl navbar" role="navigation">
+        <div class="ui container">
+            <div class="dcl navbar-menu">
+                <div class="ui secondary stackable menu">
+                    <a class="dcl navbar-logo" href="https://decentraland.org/"><i class="dcl logo"></i></a>
+                    <a href="https://market.decentraland.org/" class="item">Marketplace</a>
+                    <a href="https://builder.decentraland.org/" class="item">Builder</a>
+                    <a href="https://docs.decentraland.org/" class="item">Docs</a>
+                    <a href="https://events.decentraland.org/" class="item">Events</a>
+                    <a href="https://dao.decentraland.org/" class="item">DAO</a>
+                    <a href="https://decentraland.org/blog" class="item">Blog</a>
+                </div>
+            </div>
+            <div class="dcl navbar-account"></div>
+        </div>
+        <div class="mobile-menu">
+            <a href="https://market.decentraland.org/" class="item">Marketplace</a>
+            <a href="https://builder.decentraland.org/" class="item">Builder</a>
+            <a href="https://docs.decentraland.org/" class="item">Docs</a>
+            <a href="https://events.decentraland.org/" class="item">Events</a>
+            <a href="https://dao.decentraland.org/" class="item">DAO</a>
+            <a href="https://decentraland.org/blog" class="item">Blog</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="ui container">
+        <main>
+            <div class="ProjectProfile_container__nrXgw">
+                <div>
+                    <a href="/profile/{{ project.profile_slug }}" class="BackButton_arrowright__vzKOf" rel="noreferrer">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 17.5L18.3789 23.7284C18.7498 24.0905 19.351 24.0905 19.7219 23.7284C20.0927 23.3663 20.0927 22.7793 19.7219 22.4172L14.6859 17.5L19.7219 12.5828C20.0927 12.2207 20.0927 11.6337 19.7219 11.2716C19.351 10.9095 18.7498 10.9095 18.3789 11.2716L12 17.5Z" fill="#191919"></path><rect x="1" y="1" width="32" height="32" rx="16" stroke="#CECECE"></rect></svg>
+                    </a>
+                </div>
+                <div class="ProjectProfile_container__content__U6wnX">
+                    <div class="ProjectProfile_info_panel___FRtU">
+                        <div class="ProjectProfile_name__2FPJK">{{ project.title }}</div>
+                    </div>
+                    <div class="ProjectProfile_info_panel___FRtU">
+                        <div class="ProjectProfile_image_container__B7Rli">
+                            <div class="carousel-root">
+                                <div class="carousel carousel-slider" style="width:100%">
+                                    <button type="button" aria-label="previous slide / item" class="control-arrow control-prev"></button>
+                                    <div class="slider-wrapper axis-horizontal">
+                                        <ul class="slider animated" style="-webkit-transform:translate3d(-100%,0,0);-ms-transform:translate3d(-100%,0,0);-o-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms">
+                                            {% if project.image_1 %}<li class="slide"><img class="ProjectProfile_image_img___vL5k" src="https://admin.dclstudios.org/assets/{{ project.image_1 }}?key=project-img"></li>{% endif %}
+                                            {% if project.image_2 %}<li class="slide selected previous"><img class="ProjectProfile_image_img___vL5k" src="https://admin.dclstudios.org/assets/{{ project.image_2 }}?key=project-img"></li>{% endif %}
+                                            {% if project.image_3 %}<li class="slide"><img class="ProjectProfile_image_img___vL5k" src="https://admin.dclstudios.org/assets/{{ project.image_3 }}?key=project-img"></li>{% endif %}
+                                            {% if project.image_4 %}<li class="slide"><img class="ProjectProfile_image_img___vL5k" src="https://admin.dclstudios.org/assets/{{ project.image_4 }}?key=project-img"></li>{% endif %}
+                                            {% if project.image_5 %}<li class="slide"><img class="ProjectProfile_image_img___vL5k" src="https://admin.dclstudios.org/assets/{{ project.image_5 }}?key=project-img"></li>{% endif %}
+                                        </ul>
+                                    </div>
+                                    <button type="button" aria-label="next slide / item" class="control-arrow control-next"></button>
+                                </div>
+                                <div class="carousel">
+                                    <div class="thumbs-wrapper axis-vertical">
+                                        <button type="button" class="control-arrow control-prev control-disabled" aria-label="previous slide / item"></button>
+                                        <ul class="thumbs animated" style="-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-ms-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms">
+                                            {% if project.image_1 %}<li class="thumb selected" aria-label="slide item 1" style="width:80px" role="button" tabindex="0"><img class="ProjectProfile_image_img___vL5k" src="https://admin.dclstudios.org/assets/{{ project.image_1 }}?key=project-img"></li>{% endif %}
+                                            {% if project.image_2 %}<li class="thumb" aria-label="slide item 2" style="width:80px" role="button" tabindex="0"><img class="ProjectProfile_image_img___vL5k" src="https://admin.dclstudios.org/assets/{{ project.image_2 }}?key=project-img"></li>{% endif %}
+                                            {% if project.image_3 %}<li class="thumb" aria-label="slide item 3" style="width:80px" role="button" tabindex="0"><img class="ProjectProfile_image_img___vL5k" src="https://admin.dclstudios.org/assets/{{ project.image_3 }}?key=project-img"></li>{% endif %}
+                                            {% if project.image_4 %}<li class="thumb" aria-label="slide item 4" style="width:80px" role="button" tabindex="0"><img class="ProjectProfile_image_img___vL5k" src="https://admin.dclstudios.org/assets/{{ project.image_4 }}?key=project-img"></li>{% endif %}
+                                            {% if project.image_5 %}<li class="thumb" aria-label="slide item 4" style="width:80px" role="button" tabindex="0"><img class="ProjectProfile_image_img___vL5k" src="https://admin.dclstudios.org/assets/{{ project.image_5 }}?key=project-img"></li>{% endif %}
+                                        </ul>
+                                        <button type="button" class="control-arrow control-next control-disabled" aria-label="next slide / item"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ProjectProfile_info_about___9nlf">
+                            <div class="ProjectProfile_project_description__9lCUX">
+                                <div class="ProjectProfile_info_title__Y29Iy">About this project</div>
+                                <div class="ProjectProfile_description__qMpaC">
+                                    {{ project.description | markdownify }}
+                                </div>
+                                <div class="ProjectProfile_info_external_link__B_N_5">
+                                    <a href="{{ project.link }}" target="_blank" rel="noreferrer">visit external link &nbsp; &gt;</a>
+                                </div>
+                            </div>
+                            <div class="ProjectProfile_info_author__RC2er">
+                                <div class="ProjectProfile_info_title__Y29Iy">Author</div>
+                                <div class="ProjectProfile_partner_info__xkrsg">
+                                    <a href="/profile/{{ project.profile_slug }}"><div class="ProjectProfile_partner_logo___kakr" style="background:url(https://admin.dclstudios.org/assets/{{ project.profile_logo }}?key=logo)"></div></a>
+                                    <div class="ProjectProfile_partner_name__C_dnC"><a href="/profile/{{ project.profile_slug }}">{{ project.profile_name }}</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="ui container dcl footer">
+        <div class="main-footer">
+            <div role="listbox" aria-expanded="false" class="ui upward dropdown dcl language-dropdown" tabindex="0">
+                <div aria-atomic="true" aria-live="polite" role="alert" class="divider text">
+                    <div class="dcl language-icon-wrapper">
+                        <i class="dcl language-icon en"></i>
+                        <div class="language-icon-label">English</div>
+                    </div>
+                </div>
+                <!--
+                <i aria-hidden="true" class="dropdown icon"></i>
+                <div class="right menu transition">
+                    <div style="pointer-events: all;" role="option" aria-checked="true" aria-selected="true" class="active selected item">
+                        <div class="dcl language-icon-wrapper"><i class="dcl language-icon en"></i>
+                            <div class="language-icon-label">English</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="links">
+                <a href="https://decentraland.org">Home</a>
+                <a href="https://decentraland.org/privacy">Privacy Policy</a>
+                <a href="https://decentraland.org/terms">Terms of Use</a>
+                <a href="https://decentraland.org/content">Content Policy</a>
+                <a href="https://decentraland.org/ethics">Code of Ethics</a>
+            </div>
+        </div>
+        <div class="secondary-footer">
+            <div class="social-links">
+                <a href="https://dcl.gg/discord"><i class="social-icon discord"></i></a>
+                <a href="https://reddit.com/r/decentraland"><i class="social-icon reddit"></i></a>
+                <a href="https://github.com/decentraland"><i class="social-icon github"></i></a>
+                <a href="https://twitter.com/decentraland"><i class="social-icon twitter"></i></a>
+            </div>
+            <div class="copyright">© 2023 Decentraland</div>
+        </div>
+    </div>
+</body>
+</html>

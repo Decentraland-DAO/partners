@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("fonts");
     eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addFilter('markdownify', (str) => {
-        return markdownItRenderer.render(str);
+        return str ? markdownItRenderer.render(str) : '';
       });
 }
+

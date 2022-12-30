@@ -1,0 +1,219 @@
+---
+pagination:
+    data: profiles
+    size: 1
+    alias: profile
+permalink: "profile/{{ profile.slug }}/"
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Decentraland Verified Studios</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/css/studios.css" rel="stylesheet" type="text/css">
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="dcl navbar" role="navigation">
+        <div class="ui container">
+            <div class="dcl navbar-menu">
+                <div class="ui secondary stackable menu">
+                    <a class="dcl navbar-logo" href="https://decentraland.org/"><i class="dcl logo"></i></a>
+                    <a href="https://market.decentraland.org/" class="item">Marketplace</a>
+                    <a href="https://builder.decentraland.org/" class="item">Builder</a>
+                    <a href="https://docs.decentraland.org/" class="item">Docs</a>
+                    <a href="https://events.decentraland.org/" class="item">Events</a>
+                    <a href="https://dao.decentraland.org/" class="item">DAO</a>
+                    <a href="https://decentraland.org/blog" class="item">Blog</a>
+                </div>
+            </div>
+            <div class="dcl navbar-account"></div>
+        </div>
+        <div class="mobile-menu">
+            <a href="https://market.decentraland.org/" class="item">Marketplace</a>
+            <a href="https://builder.decentraland.org/" class="item">Builder</a>
+            <a href="https://docs.decentraland.org/" class="item">Docs</a>
+            <a href="https://events.decentraland.org/" class="item">Events</a>
+            <a href="https://dao.decentraland.org/" class="item">DAO</a>
+            <a href="https://decentraland.org/blog" class="item">Blog</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="ui container">
+        <main>
+            <div class="PartnerProfile_container__npNkQ">
+                <div>
+                    <a href="../" class="BackButton_arrowright__vzKOf" rel="noreferrer">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 17.5L18.3789 23.7284C18.7498 24.0905 19.351 24.0905 19.7219 23.7284C20.0927 23.3663 20.0927 22.7793 19.7219 22.4172L14.6859 17.5L19.7219 12.5828C20.0927 12.2207 20.0927 11.6337 19.7219 11.2716C19.351 10.9095 18.7498 10.9095 18.3789 11.2716L12 17.5Z" fill="#191919"></path><rect x="1" y="1" width="32" height="32" rx="16" stroke="#CECECE"></rect></svg>
+                    </a>
+                </div>
+                <div class="PartnerProfile_container__content__jS_2E">
+                    <div class="PartnerProfile_info_panel__EOf61">
+                        <div class="PartnerProfile_info_id__c3sp6">
+                            <a href="https://www.parcelparty.io" target="_blank" rel="noreferrer">
+                                <div class="PartnerProfile_image__J_VFw" style="background:url(https://admin.dclstudios.org/assets/{{ profile.logo }}?key=logo)"></div>
+                            </a>
+                            <div class="PartnerProfile_header_info__xiXTN">
+                                <div class="PartnerProfile_name__ao1zT">{{ profile.name }}</div>
+                                <div class="PartnerProfile_meta__9rjAk">
+                                    <div>
+                                        {% if profile.website %}
+                                        <a href="{{ profile.website }}" class="Icon_icon__t_YgI" target="_blank" rel="noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9z" fill="rgba(115,110,125,1)"></path></svg>
+                                        </a>
+                                        {% endif %}
+
+                                        {% if profile.email %}
+                                        <a href="mailto:{{ profile.email }}" class="Icon_icon__t_YgI" target="_blank" rel="noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z" fill="rgba(115,110,125,1)"></path></svg>
+                                        </a>
+                                        {% endif %}
+
+                                        {% if profile.discord %}
+                                        <a href="{{ profile.discord }}" class="Icon_icon__t_YgI" target="_blank" rel="noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10.076 11c.6 0 1.086.45 1.075 1 0 .55-.474 1-1.075 1C9.486 13 9 12.55 9 12s.475-1 1.076-1zm3.848 0c.601 0 1.076.45 1.076 1s-.475 1-1.076 1c-.59 0-1.075-.45-1.075-1s.474-1 1.075-1zm4.967-9C20.054 2 21 2.966 21 4.163V23l-2.211-1.995-1.245-1.176-1.317-1.25.546 1.943H5.109C3.946 20.522 3 19.556 3 18.359V4.163C3 2.966 3.946 2 5.109 2H18.89zm-3.97 13.713c2.273-.073 3.148-1.596 3.148-1.596 0-3.381-1.482-6.122-1.482-6.122-1.48-1.133-2.89-1.102-2.89-1.102l-.144.168c1.749.546 2.561 1.334 2.561 1.334a8.263 8.263 0 0 0-3.096-1.008 8.527 8.527 0 0 0-2.077.02c-.062 0-.114.011-.175.021-.36.032-1.235.168-2.335.662-.38.178-.607.305-.607.305s.854-.83 2.705-1.376l-.103-.126s-1.409-.031-2.89 1.103c0 0-1.481 2.74-1.481 6.121 0 0 .864 1.522 3.137 1.596 0 0 .38-.472.69-.871-1.307-.4-1.8-1.24-1.8-1.24s.102.074.287.179c.01.01.02.021.041.031.031.022.062.032.093.053.257.147.514.262.75.357.422.168.926.336 1.513.452a7.06 7.06 0 0 0 2.664.01 6.666 6.666 0 0 0 1.491-.451c.36-.137.761-.337 1.183-.62 0 0-.514.861-1.862 1.25.309.399.68.85.68.85z" fill="rgba(115,110,125,1)"></path></svg>
+                                        </a>
+                                        {% endif %}
+
+                                        {% if profile.opensea %}
+                                        <a href="{{ profile.opensea }}" class="Icon_icon__t_YgI" target="_blank" rel="noreferrer">
+                                            <svg width="24" height="24" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M90 45C90 69.8514 69.8514 90 45 90C20.1486 90 0 69.8514 0 45C0 20.1486 20.1486 0 45 0C69.8566 0 90 20.1486 90 45Z" fill="#736E7D"></path><path d="M22.2011 46.512L22.3953 46.2069L34.1016 27.8939C34.2726 27.6257 34.6749 27.6535 34.8043 27.9447C36.76 32.3277 38.4475 37.7786 37.6569 41.1721C37.3194 42.5683 36.3948 44.4593 35.3545 46.2069C35.2204 46.4612 35.0725 46.7109 34.9153 46.9513C34.8413 47.0622 34.7165 47.127 34.5824 47.127H22.5432C22.2196 47.127 22.0301 46.7756 22.2011 46.512Z" fill="white"></path><path d="M74.38 49.9149V52.8137C74.38 52.9801 74.2783 53.1281 74.1304 53.1928C73.2242 53.5812 70.1219 55.0052 68.832 56.799C65.5402 61.3807 63.0251 67.932 57.4031 67.932H33.949C25.6362 67.932 18.9 61.1727 18.9 52.8322V52.564C18.9 52.3421 19.0803 52.1618 19.3023 52.1618H32.377C32.6359 52.1618 32.8255 52.4022 32.8024 52.6565C32.7099 53.5072 32.8671 54.3764 33.2693 55.167C34.0461 56.7435 35.655 57.7283 37.3934 57.7283H43.866V52.675H37.4673C37.1391 52.675 36.9449 52.2959 37.1345 52.0277C37.2038 51.9214 37.2824 51.8104 37.3656 51.6856C37.9713 50.8257 38.8358 49.4895 39.6958 47.9684C40.2829 46.9421 40.8516 45.8463 41.3093 44.746C41.4018 44.5472 41.4758 44.3438 41.5497 44.1449C41.6746 43.7936 41.804 43.4653 41.8965 43.1371C41.9889 42.8597 42.0629 42.5684 42.1369 42.2956C42.3542 41.3617 42.4467 40.3723 42.4467 39.3459C42.4467 38.9437 42.4282 38.523 42.3912 38.1207C42.3727 37.6815 42.3172 37.2423 42.2617 36.8031C42.2247 36.4147 42.1554 36.031 42.0814 35.6288C41.9889 35.0416 41.8595 34.4591 41.7115 33.8719L41.6607 33.65C41.5497 33.2478 41.4573 32.864 41.3278 32.4618C40.9626 31.1996 40.5418 29.9698 40.098 28.8186C39.9362 28.3609 39.7512 27.9217 39.5663 27.4825C39.2935 26.8213 39.0161 26.2203 38.7619 25.6516C38.6324 25.3927 38.5214 25.1569 38.4105 24.9165C38.2857 24.6437 38.1562 24.371 38.0268 24.112C37.9343 23.9132 37.8279 23.7283 37.754 23.5434L36.9634 22.0824C36.8524 21.8836 37.0374 21.6478 37.2546 21.7079L42.2016 23.0487H42.2155C42.2247 23.0487 42.2294 23.0533 42.234 23.0533L42.8859 23.2336L43.6025 23.437L43.866 23.511V20.5706C43.866 19.1512 45.0034 18 46.4089 18C47.1116 18 47.7496 18.2866 48.2073 18.7536C48.665 19.2206 48.9517 19.8586 48.9517 20.5706V24.935L49.4787 25.0829C49.5204 25.0968 49.562 25.1153 49.599 25.143C49.7284 25.2401 49.9133 25.3835 50.1491 25.5591C50.3341 25.7071 50.5329 25.8874 50.7733 26.0723C51.2495 26.4561 51.8181 26.9508 52.4423 27.5194C52.6087 27.6628 52.7706 27.8107 52.9185 27.9587C53.723 28.7076 54.6245 29.5861 55.4845 30.557C55.7249 30.8297 55.9607 31.1071 56.2011 31.3984C56.4415 31.6943 56.6958 31.9856 56.9177 32.2769C57.209 32.6652 57.5233 33.0674 57.7961 33.4882C57.9256 33.687 58.0735 33.8904 58.1984 34.0892C58.5497 34.6209 58.8595 35.1711 59.1554 35.7212C59.2802 35.9755 59.4097 36.2529 59.5206 36.5257C59.8489 37.2608 60.1078 38.0098 60.2742 38.7588C60.3251 38.9206 60.3621 39.0963 60.3806 39.2535V39.2904C60.436 39.5124 60.4545 39.7482 60.473 39.9886C60.547 40.756 60.51 41.5235 60.3436 42.2956C60.2742 42.6239 60.1818 42.9336 60.0708 43.2619C59.9598 43.5763 59.8489 43.9045 59.7056 44.2143C59.4282 44.8569 59.0999 45.4996 58.7115 46.1006C58.5867 46.3225 58.4388 46.5583 58.2908 46.7802C58.129 47.016 57.9626 47.238 57.8146 47.4553C57.6112 47.7327 57.3939 48.0239 57.172 48.2828C56.9732 48.5556 56.7697 48.8284 56.5478 49.0688C56.2381 49.434 55.9422 49.7808 55.6324 50.1137C55.4475 50.331 55.2487 50.5529 55.0452 50.7517C54.8464 50.9736 54.643 51.1724 54.4581 51.3573C54.1483 51.6671 53.8894 51.9075 53.6721 52.1063L53.1635 52.5733C53.0896 52.638 52.9925 52.675 52.8908 52.675H48.9517V57.7283H53.9079C55.0175 57.7283 56.0716 57.3353 56.9223 56.6141C57.2136 56.3598 58.485 55.2594 59.9876 53.5997C60.0384 53.5442 60.1032 53.5026 60.1771 53.4841L73.8668 49.5265C74.1211 49.4525 74.38 49.6467 74.38 49.9149Z" fill="white"></path></svg>
+                                        </a>
+                                        {% endif %}
+
+                                        {% if profile.twitter %}
+                                        <a href="{{ profile.twitter }}" class="Icon_icon__t_YgI" target="_blank" rel="noreferrer">
+                                            <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3718 3.22505C14.998 2.75538 15.5616 2.19178 16 1.53425C15.4364 1.78474 14.7789 1.9726 14.1213 2.03523C14.8102 1.62818 15.3112 1.00196 15.5616 0.219178C14.9354 0.594912 14.2153 0.876712 13.4951 1.03327C12.8689 0.375734 12.0235 0 11.0841 0C9.2681 0 7.79648 1.47162 7.79648 3.28767C7.79648 3.53816 7.82779 3.78865 7.89041 4.03914C5.16634 3.88258 2.72407 2.56751 1.09589 0.594912C0.81409 1.06458 0.657534 1.62818 0.657534 2.2544C0.657534 3.3816 1.22114 4.38356 2.12916 4.97847C1.59687 4.94716 1.06458 4.82192 0.626223 4.57143V4.60274C0.626223 6.19961 1.75342 7.51468 3.25636 7.82779C3.00587 7.89041 2.69276 7.95303 2.41096 7.95303C2.19178 7.95303 2.00391 7.92172 1.78474 7.89041C2.19178 9.20548 3.41292 10.1448 4.85323 10.1761C3.72603 11.0528 2.31703 11.5851 0.782779 11.5851C0.500978 11.5851 0.250489 11.5538 0 11.5225C1.44031 12.4618 3.16243 12.9941 5.0411 12.9941C11.0841 12.9941 14.3718 8.01566 14.3718 3.66341C14.3718 3.50685 14.3718 3.3816 14.3718 3.22505Z" fill="#736E7D"></path></svg>
+                                        </a>
+                                        {% endif %}
+                                        
+                                        {% if profile.instagram %}
+                                        <a href="{{ profile.instagram }}" class="Icon_icon__t_YgI" target="_blank" rel="noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z" fill="rgba(115,110,125,1)"></path></svg>
+                                        </a>
+                                        {% endif %}
+
+                                        {% if profile.linkedin %}
+                                        <a href="{{ profile.linkedin }}" class="Icon_icon__t_YgI" target="_blank" rel="noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 0 1-1.548-1.549 1.548 1.548 0 1 1 1.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z" fill="rgba(115,110,125,1)"></path></svg>
+                                        </a>
+                                        {% endif %}
+
+                                        {% if profile.youtube %}
+                                        <a href="{{ profile.youtube }}" class="Icon_icon__t_YgI" target="_blank" rel="noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z" fill="rgba(115,110,125,1)"></path></svg>
+                                        </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                <div class="PartnerProfile_meta__9rjAk">
+                                    <div class="PartnerProfile_pills__eqeP2">
+                                        {%- for service in profile.services -%}
+                                        <span class="PartnerProfile_services__1UzOt"><span class="CategoryPill_container__GdIey CategoryPill_container--{{ service | slugify }}">{{ service }}</span></span>
+                                        {%- endfor -%}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="PartnerProfile_info_panel__EOf61">
+                        <div class="PartnerProfile_info_about__196qo">
+                            <div class="PartnerProfile_info_title__38Blo">About</div>
+                            <div class="PartnerProfile_description__3aUKT">
+                                <p>{{ profile.description | markdownify }}</p>
+                            </div>
+                        </div>
+                        <div class="PartnerProfile_table_container__a7zwz">
+                            <div class="PartnerProfile_info_details__5aY_R">
+                                <div><div>Region</div><div><p>{{ profile.region }}</p></div></div>
+                                <div><div>Country</div><div><p>{{ profile.country }}</p></div></div>
+                            </div>
+                            <div class="PartnerProfile_info_details__5aY_R PartnerProfile_info_details--border__q1rbj">
+                                <div><div>Team Size</div><div><p>{{ profile.team_size }}</p></div></div>
+                                <div><div>Languages</div><div><p><span>{{ profile.languages[0] }}</span></p></div></div>
+                            </div>
+                            <div class="PartnerProfile_info_details__5aY_R PartnerProfile_info_details--border__q1rbj">
+                                <div>
+                                    <div>Payment Methods</div>
+                                    <div>
+                                        <p>
+                                            <span>{{ profile.payment_methods | join: ", " }}</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projects -->
+                    <div>
+                        <div class="PartnerProfile_info_title__38Blo">Projects</div>
+                        <div class="PartnerProfile_projects_grid__GR_0Y">
+
+                            {%- for project in profile.projects -%}
+                            <div class="ProjectCard_header__dTrZm">
+                                <a href="/project/{{ project.id }}"><img class="ProjectCard_image__WBQ8P" src="https://admin.dclstudios.org/assets/{{ project.image_1 }}?key=thumb"></a>
+                                <a href="/project/{{ project.id }}"><div class="ProjectCard_header_info__NyVkE"><div class="ProjectCard_project_title__5vsIv">{{ project.title }}</div><div class="ProjectCard_header_arrow__GYRBr"><i class="ProjectCard_arrow_right__Jxs_g"></i></div></div></a>
+                            </div>
+                            {%- endfor -%}
+
+                        </div>
+                    </div>
+
+                    <!-- Report Link -->
+                    <div class="PartnerProfile_report_link__1MqgS">
+                        <a href="https://dclstudios.typeform.com/to/HQpD0z5S" target="_blank" rel="noreferrer">Report this studio</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <div class="ui container dcl footer">
+        <div class="main-footer">
+            <div role="listbox" aria-expanded="false" class="ui upward dropdown dcl language-dropdown" tabindex="0">
+                <div aria-atomic="true" aria-live="polite" role="alert" class="divider text">
+                    <div class="dcl language-icon-wrapper">
+                        <i class="dcl language-icon en"></i>
+                        <div class="language-icon-label">English</div>
+                    </div>
+                </div>
+                <!--
+                <i aria-hidden="true" class="dropdown icon"></i>
+                <div class="right menu transition">
+                    <div style="pointer-events: all;" role="option" aria-checked="true" aria-selected="true" class="active selected item">
+                        <div class="dcl language-icon-wrapper"><i class="dcl language-icon en"></i>
+                            <div class="language-icon-label">English</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="links">
+                <a href="https://decentraland.org">Home</a>
+                <a href="https://decentraland.org/privacy">Privacy Policy</a>
+                <a href="https://decentraland.org/terms">Terms of Use</a>
+                <a href="https://decentraland.org/content">Content Policy</a>
+                <a href="https://decentraland.org/ethics">Code of Ethics</a>
+            </div>
+        </div>
+        <div class="secondary-footer">
+            <div class="social-links">
+                <a href="https://dcl.gg/discord"><i class="social-icon discord"></i></a>
+                <a href="https://reddit.com/r/decentraland"><i class="social-icon reddit"></i></a>
+                <a href="https://github.com/decentraland"><i class="social-icon github"></i></a>
+                <a href="https://twitter.com/decentraland"><i class="social-icon twitter"></i></a>
+            </div>
+            <div class="copyright">© 2023 Decentraland</div>
+        </div>
+    </div>
+</body>
+</html>

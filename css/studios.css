@@ -305,6 +305,11 @@ p:first-child {
    .carousel-root {
     outline:none
    }
+   .carousel-root .carousel {
+    display: flex;
+    justify-content: center;
+    }
+
    .carousel {
     position:relative;
     width:100%
@@ -1122,4 +1127,106 @@ i.icon {
     transition: opacity .1s ease;
     z-index: 11;
     will-change: transform,opacity;
+}
+
+
+
+
+
+
+
+
+.ProjectProfile_container__nrXgw {
+    display: flex;
+}
+.ProjectProfile_container__nrXgw {
+    margin-bottom: 1rem;
+    min-height: 12rem;
+    flex-direction: row;
+    width: 100%;
+}
+.ProjectProfile_container__content__U6wnX {
+    margin: 0 24px;
+}
+.BackButton_arrowright__vzKOf svg {
+    margin-top: 4px;
+}
+.ProjectProfile_info_panel___FRtU {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.ProjectProfile_name__2FPJK {
+    font-size: xx-large;
+    line-height: normal;
+}
+.ProjectProfile_image_container__B7Rli {
+    flex: 1 1;
+    margin-right: 15px;
+    min-width: 300px;
+}
+.ProjectProfile_image_img___vL5k {
+    max-height: 450px;
+    width: auto;
+    -o-object-fit: contain!important;
+    object-fit: contain!important;
+}
+.ProjectProfile_info_about___9nlf {
+    flex: 1 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+}
+.ProjectProfile_project_description__9lCUX {
+    width: 70%;
+}
+.ProjectProfile_info_title__Y29Iy {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #736e7d;
+    margin-bottom: 8px;
+}
+.ProjectProfile_description__qMpaC {
+    font-size: 19px;
+}
+.ProjectProfile_info_external_link__B_N_5 {
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+.ProjectProfile_info_author__RC2er {
+    width: 30%;
+    padding: 0 24px;
+}
+.ProjectProfile_info_title__Y29Iy {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #736e7d;
+    margin-bottom: 8px;
+}
+.ProjectProfile_partner_info__xkrsg {
+    display: flex;
+    align-items: center;
+}
+.ProjectProfile_partner_logo___kakr {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 8px;
+    border-radius: 1rem;
+    background-size: contain!important;
+    background-position: 50%!important;
+    background-repeat: no-repeat!important;
+}
+.ProjectProfile_partner_name__C_dnC {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+a {
+color: inherit;
+text-decoration: none;
 }
