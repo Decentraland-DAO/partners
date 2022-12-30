@@ -61,6 +61,10 @@
     line-height: 1.4285em;
     color: rgba(0,0,0,.87);
     font-smoothing: antialiased;
+
+    --card_shadow: rgba(99,99,99,.2) 0px 2px 8px 0px;
+    --card_border: 1px solid hsla(260,6%,46%,.05);
+    --card_animation: translateY(-2px);
 }
   
   h1,
@@ -1351,4 +1355,95 @@ Filters_tag_container__020NR {
     border-radius: 50%;
     margin-right: 15px;
     flex-shrink: 0;
+}
+
+.PartnersList_title_container__jID5a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+h3:first-child {
+    margin-top: 0;
+}
+.PartnersList_link__WYDp2 {
+    color: #ff2d55;
+}
+.PartnerCard_container__q9TGg {
+    border: var(--card_border);
+    border-radius: 8px;
+    box-shadow: var(--card_shadow);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    min-height: 12rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    cursor: pointer;
+}
+.PartnerCard_image__plF7Y {
+    width: 10rem;
+    height: 10rem;
+    float: left;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    background-size: contain!important;
+    background-position: 50%!important;
+    background-repeat: no-repeat!important;
+}
+.PartnerCard_info_container__Gav43 {
+    flex: 1 1;
+}
+.PartnerCard_name__A5lPE {
+    margin: 0 0 0.2rem;
+}
+.PartnerCard_name__A5lPE a, .PartnerCard_name__A5lPE a:hover {
+    color: #000;
+}
+.PartnerCard_meta__3bX8h {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 0.5em;
+}
+.PartnerCard_pills__xuX5Q {
+    margin-right: 1rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.PartnerCard_services__h6Ki9 {
+    margin: 0.4rem 0.4rem 0 0;
+}
+.PartnerCard_description__e8kvp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    margin-bottom: 0.5em;
+}
+.PartnerCard_read_more_trigger__xL08C {
+    cursor: pointer;
+    display: inline-block;
+    color: #ff2d55;
+    font-size: 1em;
+    font-weight: 500;
+}
+.PartnerCard_container__q9TGg:hover {
+    transform: var(--card_animation);
+}
+.PartnerCard_container__q9TGg {
+    border: var(--card_border);
+    border-radius: 8px;
+    box-shadow: var(--card_shadow);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    min-height: 12rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    cursor: pointer;
 }
